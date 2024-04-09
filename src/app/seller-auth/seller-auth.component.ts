@@ -10,4 +10,4 @@ export class SellerAuthComponent {
     console.warn(data);
     
   }
-}
+
