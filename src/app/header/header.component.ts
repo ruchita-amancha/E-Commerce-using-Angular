@@ -18,7 +18,7 @@ export class HeaderComponent {
       console.warn(value.url);
       if(value.url){
         if(localStorage.getItem('seller') && value.url.includes("seller")){
-          console.warn("inside sellde");
+          // console.warn("inside sellde");
           this.menuType="seller"
           if(localStorage.getItem('seller')){
             let sellerStore=localStorage.getItem('seller');
@@ -27,7 +27,7 @@ export class HeaderComponent {
           }
         }
         else{
-          console.warn("outside seller");
+          // console.warn("outside seller");
           this.menuType='default'
         }
       }

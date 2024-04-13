@@ -7,4 +7,9 @@ import { Component } from '@angular/core';
 })
 export class SellerAddProductComponent {
 
+// Add Product
+  addProd(data:object){
+    console.warn(data);
+    
+  }
 }
