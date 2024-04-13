@@ -12,5 +12,16 @@
       "password": "Lata",
       "email": "Lata@test1.com"
     }
+  ],
+  "products": [
+    {
+      "id": "488b",
+      "category": "mobile",
+      "color": "black",
+      "description": "Mobile S23",
+      "image": "abc",
+      "name": "Samsung",
+      "price": "23000"
+    }
   ]
 }
