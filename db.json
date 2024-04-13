@@ -1,52 +1,10 @@
 {
   "seller": [
     {
-      "id": "5f7c",
-      "name": "Ruchita",
-      "email": "kjal",
-      "password": "kfjslk"
-    },
-    {
-      "id": "f766",
-      "name": "Ruchita",
-      "email": "kjal",
-      "password": "kfjslk"
-    },
-    {
-      "id": "11c7",
-      "name": "Ruchita",
-      "email": "kjal",
-      "password": "kfjslk"
-    },
-    {
-      "id": "d312",
-      "Name": "",
-      "Password": "",
-      "email": ""
-    },
-    {
-      "id": "84b1",
-      "Name": "mdsmc",
-      "Password": "m d",
-      "email": "cmd"
-    },
-    {
-      "id": "1367",
-      "Name": "ruchita",
-      "Password": "ruchi@123",
-      "email": "ruchita@test.com"
-    },
-    {
-      "id": "a8bb",
-      "Name": "",
-      "Password": "",
-      "email": ""
-    },
-    {
-      "id": "4627",
-      "Name": "",
-      "Password": "",
-      "email": ""
+      "id": "436b",
+      "name": "ruchita",
+      "password": "Ruchi",
+      "email": "ruchita@test1.com"
     }
   ]
 }
