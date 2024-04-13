@@ -9,6 +9,7 @@ import { Router } from '@angular/router';
 })
 export class HeaderComponent {
 
+  sellerName:string=''
   menuType:string='default'
   constructor(private router:Router){}
 
@@ -19,6 +20,11 @@ export class HeaderComponent {
         if(localStorage.getItem('seller') && value.url.includes("seller")){
           console.warn("inside sellde");
           this.menuType="seller"
+          if(localStorage.getItem('seller')){
+            let sellerStore=localStorage.getItem('seller');
+            let sellerData= sellerStore && JSON.parse(sellerStore)[0];
+            this.sellerName=sellerData.name;
+          }
         }
         else{
           console.warn("outside seller");
@@ -26,5 +32,10 @@ export class HeaderComponent {
         }
       }
     })
+  }
+
+  logout(){
+    localStorage.removeItem("seller");
+    this.router.navigate(["/"])
   }
 }
