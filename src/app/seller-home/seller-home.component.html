@@ -22,7 +22,8 @@
                 <td>{{item.category}}</td>
                 <td>{{item.description}}</td>
                 <td>
-                <fa-icon [icon]="icon" (click)="deleteProduct(item.id)"></fa-icon>
+                <fa-icon class="adjust-update-link" [icon]="icon" (click)="deleteProduct(item.id)"></fa-icon>
+                <a class="adjust-update-link" href="/seller-update-product/{{item.id}}"> <fa-icon [icon]="editIcon" ></fa-icon></a>
             </tr>
         </tbody>
     </table>
