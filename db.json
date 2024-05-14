@@ -11,6 +11,12 @@
       "name": "Lata",
       "password": "Lata",
       "email": "Lata@test1.com"
+    },
+    {
+      "id": "93b6",
+      "name": "",
+      "password": "",
+      "email": ""
     }
   ],
   "products": [
@@ -24,12 +30,12 @@
       "id": "2"
     },
     {
-      "category": "Toys",
-      "color": "Red",
-      "description": "A toy for 5 year old child",
-      "image": "https://cdn.shopify.com/s/files/1/0011/8367/8476/products/Truck2_1400x.png?v=1662789388",
       "name": "Truck",
       "price": "Toy",
+      "color": "Red",
+      "category": "Toys",
+      "description": "A toy for 10 year old child",
+      "image": "https://cdn.shopify.com/s/files/1/0011/8367/8476/products/Truck2_1400x.png?v=1662789388",
       "id": "6"
     },
     {
@@ -40,6 +46,15 @@
       "name": "Noise Smart Watch",
       "price": "2000",
       "id": "7"
+    },
+    {
+      "id": "264a",
+      "name": "Demo",
+      "price": "748",
+      "color": "jdfj",
+      "category": "njkdndkj",
+      "description": "djnfjkd",
+      "image": "fnjkdf"
     }
   ]
 }
