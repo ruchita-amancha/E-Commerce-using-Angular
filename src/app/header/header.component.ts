@@ -1,41 +1,65 @@
 import { LowerCasePipe } from '@angular/common';
-import { Component } from '@angular/core';
+import { Component, ElementRef } from '@angular/core';
 import { Router } from '@angular/router';
+import { ProductService } from '../services/product.service';
+import { product } from 'src/dataTypes';
 
 @Component({
   selector: 'app-header',
   templateUrl: './header.component.html',
-  styleUrls: ['./header.component.css']
+  styleUrls: ['./header.component.css'],
 })
 export class HeaderComponent {
+  sellerName: string = '';
+  menuType: string = 'default';
+  searchResult:undefined|product[];
+  constructor(private router: Router, private product: ProductService) {}
 
-  sellerName:string=''
-  menuType:string='default'
-  constructor(private router:Router){}
-
-  ngOnInit():void{
-    this.router.events.subscribe((value:any)=>{
+  ngOnInit(): void {
+    this.router.events.subscribe((value: any) => {
       console.warn(value.url);
-      if(value.url){
-        if(localStorage.getItem('seller') && value.url.includes("seller")){
+      if (value.url) {
+        if (localStorage.getItem('seller') && value.url.includes('seller')) {
           // console.warn("inside sellde");
-          this.menuType="seller"
-          if(localStorage.getItem('seller')){
-            let sellerStore=localStorage.getItem('seller');
-            let sellerData= sellerStore && JSON.parse(sellerStore)[0];
-            this.sellerName=sellerData.name;
+          this.menuType = 'seller';
+          if (localStorage.getItem('seller')) {
+            let sellerStore = localStorage.getItem('seller');
+            let sellerData = sellerStore && JSON.parse(sellerStore)[0];
+            this.sellerName = sellerData.name;
           }
-        }
-        else{
+        } else {
           // console.warn("outside seller");
-          this.menuType='default'
+          this.menuType = 'default';
         }
       }
-    })
+    });
   }
 
-  logout(){
-    localStorage.removeItem("seller");
-    this.router.navigate(["/"])
+  logout() {
+    localStorage.removeItem('seller');
+    this.router.navigate(['/']);
+  }
+
+  searchProduct(query: KeyboardEvent) {
+    if (query) {
+      const element = query.target as HTMLInputElement;
+      console.warn(element.value);
+      this.product.searchProduct(element.value).subscribe((data) => {
+        console.warn(data);
+        if(data.length>5){
+          data.length=5
+
+        }
+        this.searchResult=data
+      });
+
+    }
+  }
+
+  hideSearch(){
+    this.searchResult=undefined
+  }
+  submitSearch(val:string){
+    this.router.navigate([`search/${val}`])
   }
 }
