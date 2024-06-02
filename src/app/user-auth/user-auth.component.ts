@@ -8,6 +8,9 @@ import { UserService } from '../services/user.service';
   styleUrls: ['./user-auth.component.css']
 })
 export class UserAuthComponent {
+
+  showLogin=false;
+
   constructor(private userAuth: UserService) {}
 
   ngOnInit():void{
@@ -19,5 +22,16 @@ export class UserAuthComponent {
        this.userAuth.userSignUp(data);    
   }
 
+  login(data:SignUp){
+    this.userAuth.login(data)
+  }
+
+  openLogin(){
+    this.showLogin=true
+  }
+
+  openSignUp(){
+    this.showLogin=false
+  }
 
 }

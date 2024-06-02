@@ -1,5 +1,5 @@
 import { Injectable } from '@angular/core';
-import { SignUp } from 'src/dataTypes';
+import { Login, SignUp } from 'src/dataTypes';
 import { UserAuthComponent } from '../user-auth/user-auth.component';
 import { HttpClient } from '@angular/common/http';
 import { Router } from '@angular/router';
@@ -26,5 +26,10 @@ export class UserService {
     if(localStorage.getItem('user')){
       this.router.navigate(['/'])
     }
+  }
+
+  login(data:Login){
+console.warn(data);
+
   }
 }
