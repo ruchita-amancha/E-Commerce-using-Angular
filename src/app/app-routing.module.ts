@@ -42,6 +42,10 @@ const routes: Routes = [
   {
     path:'details/:productId',
     component:ProductDetailsComponent
+  },
+  {
+    path:'user-auth',
+    component:UserAuthComponent
   }
 ];
 
