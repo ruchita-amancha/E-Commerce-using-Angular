@@ -62,4 +62,8 @@ export class HeaderComponent {
   submitSearch(val:string){
     this.router.navigate([`search/${val}`])
   }
+  redirectToDetails(id:number){
+    this.router.navigate([`/details/`+id])
+
+  }
 }
