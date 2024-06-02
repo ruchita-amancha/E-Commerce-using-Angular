@@ -88,15 +88,6 @@
       "description": "Noise smart watch for man and women both",
       "image": "https://www.reliancedigital.in/medias/Noise-Colorfit-Pro-2-Smart-Watch-491900986-i-1-1200Wx1200H-300Wx300H?context=bWFzdGVyfGltYWdlc3w1MDc0NXxpbWFnZS9qcGVnfGltYWdlcy9oYzkvaDdjLzk1OTE4MjA3NDY3ODIuanBnfDA3MjZlMzkzOTExYzMyNzk5Y2YzOTk0MWFkMjc5YjE5OTlkMDE4NzYzYTg1YzQ2YmNjZjMxYzc5ZDJiYjBlNDg",
       "id": "7"
-    },
-    {
-      "id": "c7b9",
-      "name": "Demo",
-      "price": "200",
-      "color": "pink",
-      "category": "Toys",
-      "description": "temp",
-      "image": "nksdnfks"
     }
   ],
   "users": [
@@ -145,6 +136,84 @@
     {
       "id": "f1c0",
       "name": "vcv",
+      "email": "",
+      "password": ""
+    },
+    {
+      "id": "5d65",
+      "name": "",
+      "email": "",
+      "password": ""
+    },
+    {
+      "id": "4d61",
+      "name": "demo",
+      "email": "",
+      "password": ""
+    },
+    {
+      "id": "9946",
+      "name": "Truck",
+      "email": "",
+      "password": ""
+    },
+    {
+      "id": "1e11",
+      "name": "demo",
+      "email": "",
+      "password": ""
+    },
+    {
+      "id": "9d2e",
+      "name": "demo",
+      "email": "",
+      "password": ""
+    },
+    {
+      "id": "73c3",
+      "name": "demo",
+      "email": "",
+      "password": ""
+    },
+    {
+      "id": "b29b",
+      "name": "demo",
+      "email": "",
+      "password": ""
+    },
+    {
+      "id": "a830",
+      "name": "",
+      "email": "",
+      "password": ""
+    },
+    {
+      "id": "420e",
+      "name": "Demo",
+      "email": "",
+      "password": ""
+    },
+    {
+      "id": "47c0",
+      "name": "Abc",
+      "email": "dfsdv",
+      "password": "fdsfcdsc"
+    },
+    {
+      "id": "0a5e",
+      "name": "demo",
+      "email": "",
+      "password": ""
+    },
+    {
+      "id": "3021",
+      "name": "Temp",
+      "email": "",
+      "password": ""
+    },
+    {
+      "id": "72f5",
+      "name": "Truck",
       "email": "",
       "password": ""
     }
