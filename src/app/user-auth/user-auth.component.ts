@@ -23,7 +23,7 @@ export class UserAuthComponent {
   }
 
   login(data:SignUp){
-    this.userAuth.login(data)
+    this.userAuth.userLogin(data)
   }
 
   openLogin(){
