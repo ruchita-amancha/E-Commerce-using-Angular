@@ -1,7 +1,7 @@
-.user-auth, .login{
+.user-auth, .user-login{
     text-align: center;
 }
-.user-auth h1 , .login h1{
+.user-auth h1 , .user-login h1{
     margin-bottom: 50px;
     margin-top: 80px;
     color:blueviolet
